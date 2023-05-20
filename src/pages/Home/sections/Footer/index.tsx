@@ -15,7 +15,7 @@ const Footer = () => {
           <ul>
             <li>
               <a
-                href="/"
+                href="https://api.whatsapp.com/send?phone=555180276708"
                 title="Entre em contato pelo nosso Whatsapp"
                 target="_blank"
               >
