@@ -3,8 +3,8 @@ import { colors } from "../../styles/vars";
 
 
 type PropsSelect = {
-  active: boolean,
-  show: boolean
+  active: string,
+  show: string
 }
 
 export const Select = styled.div<PropsSelect>`
@@ -26,13 +26,13 @@ export const Select = styled.div<PropsSelect>`
     transition: .2s;
   }
   input{
-    border: 1.4px solid ${({ show }) => show ? "#ffffffd5" : "#ffffff1d"};;
+    border: 1.4px solid ${({ show }) => JSON.parse(show) ? "#ffffffd5" : "#ffffff1d"};;
     width: 100%;
     color: ${colors.light};
     font-size: 1rem;
     padding: .8rem 1rem;
     border-radius: .3rem;
-    color: ${({ active }) => active ? "#fff" : "#ffffff9e"};
+    color: ${({ active }) => JSON.parse(active) ? "#fff" : "#ffffff9e"};
     cursor: pointer;
 
 

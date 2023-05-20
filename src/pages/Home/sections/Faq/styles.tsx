@@ -63,7 +63,7 @@ export const Accordions = styled.ul`
 `
 
 type PropsAccordion = {
-  show: boolean
+  show: string
 }
 
 export const Accordion = styled.li<PropsAccordion>`
@@ -90,7 +90,7 @@ export const Accordion = styled.li<PropsAccordion>`
     gap: 1rem;
     position: relative;
     padding: 0 2.4rem;
-    opacity: ${({ show }) => show ? "1" : ".6"};
+    opacity: ${({ show }) => JSON.parse(show) ? "1" : ".6"};
     transition: .2s;
     @media (max-width: 500px) {
       padding: 0 1.7rem;
@@ -133,22 +133,22 @@ export const Accordion = styled.li<PropsAccordion>`
     }
   }
   .response{
-    height: ${({ show }) => show ? "220px" : "0px"};
+    height: ${({ show }) => JSON.parse(show) ? "220px" : "0px"};
     transition: .2s;
     overflow: hidden;
     padding: 0 2.4rem;
     @media (max-width: 1000px) {
-      height: ${({ show }) => show ? "150px" : "0px"};
+      height: ${({ show }) => JSON.parse(show) ? "150px" : "0px"};
     }
     @media (max-width: 870px) {
-      height: ${({ show }) => show ? "220px" : "0px"};
+      height: ${({ show }) => JSON.parse(show) ? "220px" : "0px"};
     }
     @media (max-width: 660px) {
-      height: ${({ show }) => show ? "280px" : "0px"};
+      height: ${({ show }) => JSON.parse(show) ? "280px" : "0px"};
     }
     @media (max-width: 500px) {
       padding: 0 1.7rem;
-      height: ${({ show }) => show ? "280px" : "0px"};
+      height: ${({ show }) => JSON.parse(show) ? "280px" : "0px"};
     }
     p{
       padding-top: 1rem;

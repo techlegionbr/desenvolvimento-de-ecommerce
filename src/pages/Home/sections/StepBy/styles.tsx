@@ -60,13 +60,13 @@ export const Carousel = styled.div`
 
   }
   .button-controller-left{
-    left: 1rem;
+    left: -.2rem;
     @media (max-width: 470px) {
       left: calc(50% - 3rem);;
     }
   }
   .button-controller-right{
-    right: 1rem;
+    right: -.2rem;
     @media (max-width: 470px) {
       right: calc(50% - 3rem);
     }

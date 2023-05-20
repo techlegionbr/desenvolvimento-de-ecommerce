@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import { useRef, useState } from "react"
 import * as S from "../styles"
 
 type TypeItemsCarousel = {
@@ -11,34 +11,45 @@ type PropsCarousel = {
   items: TypeItemsCarousel[]
 }
 
+type TypeBlockButtons = {
+  left: boolean,
+  right: boolean
+}
+
 const Carousel = ({ items }: PropsCarousel) => {
   const carouselRef = useRef<HTMLUListElement | null>(null)
+  const [blockButtons, setBlockButtons] = useState<TypeBlockButtons>({
+    left: false,
+    right: false
+  })
   const gapCarousel = 16
 
   const handleClickButtonScroller = (direction: "left" | "right") => {
-    const carouselElement = carouselRef.current
-    if (!carouselElement) return
-    const offsetWidth = carouselElement.offsetWidth + gapCarousel
-    if (direction === "left") {
-      carouselElement.scrollLeft -= offsetWidth
-    } else {
-      carouselElement.scrollLeft += offsetWidth
+    const { current: carouselElement } = carouselRef;
+    if (!carouselElement) return;
+    const offsetWidth = carouselElement.offsetWidth + gapCarousel;
+    const { left: leftBlock, right: rightBlock } = blockButtons;
+
+    const setBlockButtonsState = (left: boolean, right: boolean) => {
+      setBlockButtons(prevBlock => ({
+        ...prevBlock,
+        left,
+        right
+      }));
+    };
+
+    if (direction === "left" && !leftBlock) {
+      carouselElement.scrollLeft -= offsetWidth;
+      setBlockButtonsState(true, false);
+      setTimeout(() => setBlockButtonsState(false, false), 1000);
+    } else if (direction === "right" && !rightBlock) {
+      carouselElement.scrollLeft += offsetWidth;
+      setBlockButtonsState(false, true);
+      setTimeout(() => setBlockButtonsState(false, false), 1000);
     }
+
   }
 
-  useEffect(() => {
-    const carouselElement = carouselRef.current
-    if (carouselElement) {
-      const offsetWidth = carouselElement.offsetWidth + gapCarousel
-      setInterval(() => {
-        if (carouselElement.scrollLeft > offsetWidth) {
-          carouselElement.scrollLeft = 0
-        } else {
-          carouselElement.scrollLeft += offsetWidth
-        }
-      }, 15 * 1000)
-    }
-  }, [])
 
 
 

@@ -60,8 +60,8 @@ const Select = ({ options, selectLabel }: PropsSelect) => {
 
   return (
     <S.Select
-      active={!!optionSelected.value}
-      show={showOptions}
+      active={JSON.stringify(Boolean(optionSelected.value))}
+      show={JSON.stringify(showOptions)}
       ref={selectRef}
     >
       <input disabled value={optionSelected.label} />
