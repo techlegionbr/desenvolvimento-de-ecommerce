@@ -1,7 +1,7 @@
 import * as S from "./styles"
-import imageSocial01 from "../../../../assets/images/social-impact/trabalhar-em-casa-em-uma-estacao-de-trabalho-ergonomica.jpg"
-import imageSocial02 from "../../../../assets/images/social-impact/jovens-fazendo-festa-em-casa.jpg"
-import imageSocial03 from "../../../../assets/images/social-impact/tres-designers-confiantes-juntos-e-conversando.jpg"
+import imageSocial01 from "../../../../assets/images/two-happy-coworkers-working-computer_2_11zon.webp"
+import imageSocial02 from "../../../../assets/images/mesa-developer-interessados-ambiente_9_11zon.webp"
+import imageSocial03 from "../../../../assets/images/multiethinics-technologie_13_11zon.webp"
 
 const SocialImpact = () => {
   return (

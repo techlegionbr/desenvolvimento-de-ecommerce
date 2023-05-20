@@ -10,14 +10,15 @@ export const Benefits = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 100px 1rem;
+  padding: ${sizings.padding_section};
+  border-top: 1.4px solid #ffffff1c;
 
   @media (max-width: 1300px) { min-height: 100vh; }
   .content{
     width: ${sizings.content};
     text-align: center;
     .card-list{
-      margin-top: 5rem;
+      margin-top: ${sizings.spacing_top_title_section};
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
@@ -61,7 +62,7 @@ export const Card = styled.li`
           position: relative;
           cursor: default;
           transition: .2s ease-in-out;
-          border: 1.5px solid #ffffff3e;
+          border: 1.5px solid ${colors.light_weak_border};
           
           &:hover{
             .description-service{

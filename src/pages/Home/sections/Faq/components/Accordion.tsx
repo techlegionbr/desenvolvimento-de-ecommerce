@@ -14,18 +14,21 @@ const Accordion = ({ question, response, number }: PropsAccordion) => {
 
   return (
     <S.Accordion onClick={() => onClickAccordion(number, show)} show={show}>
-      <div className={`question-container`}>
-        <div className={`question`}>
-          <span className="number-question">{number}.</span>
-          <p>{question}</p>
-          <button style={{
-            transform: `rotate(${show ? "180deg" : "0deg"})`
-          }} className="arrow-response"><i className={`bx bxs-down-arrow`}></i></button>
-        </div>
-        <div className="response">
-          <p>{response}</p>
-        </div>
+
+      <div className="question">
+        <span className="number-question">{number}.</span>
+        <p>{question}</p>
+        <button
+          style={{ transform: `rotate(${show ? "180deg" : "0deg"})` }}
+          className="arrow-button"
+        >
+          <i className={`bx bxs-down-arrow`}></i>
+        </button>
       </div>
+      <div className="response">
+        <p>{response}</p>
+      </div>
+
     </S.Accordion>
   )
 }

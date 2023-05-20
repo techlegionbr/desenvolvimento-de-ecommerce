@@ -1,6 +1,7 @@
-import Input from "the-mask-input"
+
 import * as S from "./styles"
-import Select from "./components/Select"
+import Select from "../../../../components/Select"
+import Input from "../../../../components/Input"
 
 
 const Main = () => {

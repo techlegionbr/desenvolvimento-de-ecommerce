@@ -1,9 +1,12 @@
 import * as S from "./styles"
 
-import imageCardDesign from "../../../../assets/images/card-services/homem-de-vista-lateral-trabalhando-na-mesa.jpg"
-import imageCardRedesSociais from "../../../../assets/images/card-services/conceito-de-marketing-de-midia-social-para-marketing-com-aplicativos.jpg"
-import imageCardLucros from "../../../../assets/images/card-services/imagem-recortada-da-mulher-que-fornece-informacoes-sobre-cartoes-e-chave-no-telefone-ou-laptop-enquanto-faz-compras-on-line.jpg"
-import imageCardEstoque from "../../../../assets/images/card-services/medium-shot-woman-typing-laptop.jpg"
+import imgDesignResponsivo from "../../../../assets/images/pessoa-que-paga-com-seu-aplicativo-de-carteira-para-smartphone.webp"
+import imgDesignCartPay from "../../../../assets/images/maos-trabalhando-no-laptop-e-segurando-um-cartao-no-chao.webp"
+import imgPaymantVariant from "../../../../assets/images/jovem-empresario-negro-usando-cartao-de-credito-e-telefone-inteligente-enquanto-fazia-compras-online.webp"
+import imgAvaliationClient from "../../../../assets/images/colagem-do-conceito-de-experiencia-do-cliente.webp"
+import imgSearchAvanced from "../../../../assets/images/mao-tocando-com-o-icone-de-pesquisa-para-search-engine-optimization-ou-conceito-de-seo-para-encontra.webp"
+import imgDesconto from "../../../../assets/images/retrato-mulher-feliz-olhando-para-mini-presente.webp"
+
 import Card from "./components/Card"
 
 const Benefits = () => {
@@ -16,46 +19,46 @@ const Benefits = () => {
         </div>
         <ul className="card-list">
           <Card
-            icon={<i className='bx bxs-palette'></i>}
-            image={imageCardDesign}
-            title={<h4>Design <br /><span>Personalizado</span></h4>}
-            description="Transforme sua marca em uma potência online com nosso serviço de ecommerce. Personalização de design impecável para uma loja virtual única e irresistível, garantindo destaque absoluto diante da concorrência."
+            icon={<i className='bx bxs-devices'></i>}
+            image={imgDesignResponsivo}
+            title={<h4>Design <span>atraente<br /> e responsivo</span></h4>}
+            description="O serviço de desenvolvimento de e-commerce deve oferecer design moderno, limpo e responsivo, adaptável a smartphones, tablets e computadores. Garanta experiência de compra agradável e consistente em todos os dispositivos."
             redirect="/"
           />
           <Card
-            icon={<i className='bx bxs-network-chart'></i>}
-            image={imageCardRedesSociais}
-            title={<h4>Integração com <br /><span>Redes Sociais</span></h4>}
+            icon={<i className='bx bxs-cart-alt' ></i>}
+            image={imgDesignCartPay}
+            title={<h4>Carrinho de <br /><span>compras intuitivo</span></h4>}
             redirect="/"
-            description="Alcance mais, venda mais. Conecte sua loja online às redes sociais mais populares. Aumente suas vendas com nossa integração perfeita entre e-commerce e Facebook, Instagram e Twitter."
+            description="Otimizar o carrinho de compras para facilidade e intuição dos clientes é crucial. Permita adicionar/remover itens, ver resumo do pedido e aplicar cupons. Um processo de compra simples e conveniente aumenta a chance de finalização de transações."
           />
           <Card
-            icon={<i className='bx bxs-cog'></i>}
-            image={imageCardLucros}
-            title={<h4>Recomendações <br /><span>Inteligentes</span></h4>}
+            icon={<i className='bx bxs-credit-card-alt'></i>}
+            image={imgPaymantVariant}
+            title={<h4>Opções de <br /><span>pagamento variadas</span></h4>}
             redirect="/"
-            description="Aumente sua lucratividade com nossa solução de e-commerce! Recomendações inteligentes analisam o comportamento do cliente, fornecendo sugestões personalizadas. A satisfação aumenta, as compras extras são incentivadas e a taxa de conversão melhora. O sucesso está ao seu alcance!"
+            description="Ofereça diversas opções de pagamento: cartões de crédito, PayPal, transferência bancária e carteiras digitais. Mais flexibilidade resulta em maior chance de conclusão da compra pelo cliente."
           />
           <Card
-            icon={<i className='bx bxs-store'></i>}
-            image={imageCardEstoque}
-            title={<h4>Gestão completa <br />do <span>seu negócio</span></h4>}
+            icon={<i className='bx bxs-message'></i>}
+            image={imgAvaliationClient}
+            title={<h4>Feedback <br /> <span> dos clientes</span></h4>}
             redirect="/"
-            description="Controle total do seu e-commerce com facilidade! Recursos avançados simplificam a gestão do seu negócio: painel completo para gerenciar estoques, pedidos, pagamentos e envios. Apenas alguns cliques separam você de uma tarefa eficiente e poderosa."
+            description="Adicione avaliações e comentários de clientes aos produtos para construir confiança e credibilidade. Potenciais clientes poderão ler as experiências de outros compradores, promovendo uma decisão de compra informada."
           />
           <Card
-            icon={<i className='bx bxs-store'></i>}
-            image={imageCardLucros}
-            title={<h4>Gestão completa <br />do <span>seu negócio</span></h4>}
+            icon={<i className='bx bxs-search-alt-2' ></i>}
+            image={imgSearchAvanced}
+            title={<h4>Recursos de <br /> <span>busca avançada</span></h4>}
             redirect="/"
-            description="Aumente sua taxa de conversão com funcionalidades exclusivas para uma experiência de compra excepcional. Pagamentos seguros e convenientes, recomendações inteligentes e personalização de produtos. Potencialize suas vendas agora!"
+            description="Implemente uma pesquisa avançada que permita aos clientes filtrar produtos com base em categorias, preço, marca ou outros critérios relevantes. Isso torna mais fácil para os clientes encontrarem exatamente o que estão procurando e aumenta a satisfação do usuário."
           />
           <Card
-            icon={<i className='bx bxs-store'></i>}
-            image={imageCardLucros}
-            title={<h4>Gestão completa <br />do <span>seu negócio</span></h4>}
+            icon={<i className='bx bxs-offer'></i>}
+            image={imgDesconto}
+            title={<h4>Programa de <span><br /> descontos exclusivos</span></h4>}
             redirect="/"
-            description="Aumente sua lucratividade com nossa solução de e-commerce! Recomendações inteligentes analisam o comportamento do cliente, fornecendo sugestões personalizadas. A satisfação aumenta, as compras extras são incentivadas e a taxa de conversão melhora. O sucesso está ao seu alcance!"
+            description="Crie um programa de fidelidade que recompense os clientes frequentes com descontos exclusivos, promoções especiais ou pontos que possam ser trocados por recompensas. Isso incentiva a fidelidade do cliente e o retorno às compras em sua loja virtual."
           />
         </ul>
       </div>

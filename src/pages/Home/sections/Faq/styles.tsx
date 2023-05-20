@@ -10,14 +10,15 @@ export const Faq = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 2rem;
+  padding: ${sizings.padding_section};
   background: ${sectionBackgroundColors.faq};
+  border-top: 1.4px solid #ffffff1c;
   @media (max-width: 1300px) { min-height: 100vh; }
   .content{
     width: ${sizings.content};
     .faq-container{
       width: 100%;
-      margin-top: 5rem;
+      margin-top: ${sizings.spacing_top_title_section};
       display: flex;
       align-items: flex-start;
       justify-content: center;
@@ -28,10 +29,10 @@ export const Faq = styled.div`
       }
       .image-faq{
         width: 40%;
-        height: 500px;
+        height: 550px;
         overflow: hidden;
         border-radius: .8rem;
-        border: 1.4px solid #ffffff2c;
+        border: 1.4px solid ${colors.light_weak_border};
         @media (max-width: 1000px) {
           width: 100%;
           height: 400px;
@@ -54,7 +55,7 @@ export const Accordions = styled.ul`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: .6rem;
+  gap: 1rem;
   @media (max-width: 1000px) {
     width: 100%;
     padding-right: 0;
@@ -68,87 +69,95 @@ type PropsAccordion = {
 export const Accordion = styled.li<PropsAccordion>`
   flex: none;
   width: 100%;
-  height: ${({ show }) => show ? "300px" : "85px"};
-  background-color: #151b43df;
-  border-radius: .5rem;
-  padding: 1.4rem;
-  border: 1.3px solid #ffffff34;
+  background-color: #221b51;
+  padding: 1.7rem;
   cursor: pointer;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  gap: 1rem;
+  border: 1.5px solid ${colors.light_weak_border};
+  border-radius: .4rem;
   overflow: hidden;
-  opacity: ${({ show }) => show ? "1" : ".8"};
-  transition: .2s;
-  @media (max-width: 1000px) {
-    height: ${({ show }) => show ? "250px" : "85px"};
+  @media (max-width: 500px) {
+    padding: 1.2rem;
   }
   &:hover .question{
     opacity: 1;
   }
-  .question-container{
+  .question{
     width: 100%;
-    height: ${({ show }) => show ? "85px" : "100%"};
-    transition: .2s;
-    padding: 0 3rem;
+    min-height: 40px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-      .question{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 1rem;
-        font-weight: bold;
-        transition: .2s;
-        position: relative;
-        p{
-          user-select: none;
-          @media (max-width: 1000px) {
-            max-width: 60%;
-          }
-        }
-        .number-question{
-          position: absolute;
-          left: -2.5rem;
-          top: 0;
-          bottom: 0;
-          margin: auto;
-          align-items: flex-start;
-          font-size: 1.5rem;
-          color: ${colors.third};
-          font-weight: bold;
-          width: 30px;
-          height: 30px;
-
-        }
-      .arrow-response{
-        all: unset;
-        margin-left: 1rem;
-        color: ${colors.third};
-        transition: .2s;
-        font-size: 1rem;
-        margin: auto;
-        position: absolute;
-        right: -2.5rem;
+    gap: 1rem;
+    position: relative;
+    padding: 0 2.4rem;
+    opacity: ${({ show }) => show ? "1" : ".6"};
+    transition: .2s;
+    @media (max-width: 500px) {
+      padding: 0 1.7rem;
+    }
+    .arrow-button{
+      all: unset;
+      position: absolute;
+      right: 0;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      color: ${colors.third};
+      transition: .2s;
+      @media (max-width: 500px) {
+        font-size: .8rem;
       }
     }
-    .response{
-        margin-top: 1.3rem;
-        @keyframes translateY {
-          0%{ opacity: 0; }
-          100%{ opacity: 1 }
-        }
-        animation: translateY .4s;
-        p{
-          font-size: .9rem;
-        }
+
+    p{
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      user-select: none;
+      @media (max-width: 500px) {
+        font-size: .8rem;
       }
+    }
+
+    .number-question{
+      display: inline-flex;
+      left: 0;
+      position: absolute;
+      margin: auto;
+      font-weight: bold;
+      color: ${colors.third};
+      font-size: 1.5rem;
+      @media (max-width: 500px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .response{
+    height: ${({ show }) => show ? "220px" : "0px"};
+    transition: .2s;
+    overflow: hidden;
+    padding: 0 2.4rem;
+    @media (max-width: 1000px) {
+      height: ${({ show }) => show ? "150px" : "0px"};
+    }
+    @media (max-width: 870px) {
+      height: ${({ show }) => show ? "220px" : "0px"};
+    }
+    @media (max-width: 660px) {
+      height: ${({ show }) => show ? "280px" : "0px"};
+    }
+    @media (max-width: 500px) {
+      padding: 0 1.7rem;
+      height: ${({ show }) => show ? "280px" : "0px"};
+    }
+    p{
+      padding-top: 1rem;
+      font-size: 1rem;
+      @media (max-width: 500px) {
+        padding-top: .6rem;
+        font-size: .8rem;
+      }
+    }
   }
   
   

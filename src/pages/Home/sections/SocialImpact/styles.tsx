@@ -10,7 +10,8 @@ export const SocialImpact = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 100px 2rem;
+  padding: ${sizings.padding_section};
+  border-top: 1.4px solid #ffffff1c;
   @media (max-width: 1300px) {
     padding: 100px 0;
   }
@@ -100,7 +101,7 @@ export const SocialImpact = styled.div`
           }
         }
         p{
-          color: #ffffffe6;
+          color: ${colors.light_weak_text};
           line-height: 1.2rem;
           margin-bottom: .6rem;
           a{

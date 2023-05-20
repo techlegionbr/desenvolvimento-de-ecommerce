@@ -9,12 +9,13 @@ export const Techologies = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 100px 1rem;
+  padding: ${sizings.padding_section};
+  border-top: 1.4px solid #ffffff1c;
   .content{
     width: ${sizings.content};
     text-align: center;
     .carousel-list{
-      margin-top: 4rem;
+      margin-top: ${sizings.spacing_top_title_section};
       display: grid;
       gap: 3rem;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -32,7 +33,7 @@ export const Carousel = styled.li`
     justify-content: center;
     gap: .4rem;
     background-color: #021d49;
-    border: 1.4px solid #ffffff2b;
+    border: 1.4px solid ${colors.light_weak_border};
     padding: 1rem;
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
@@ -43,7 +44,7 @@ export const Carousel = styled.li`
       line-height: 1.2rem;
       text-transform: uppercase;
       font-size: 1rem;
-      color: #ffffffdc;
+      color: ${colors.light_weak_text};
     }
     i{
       font-size:2rem;
@@ -54,7 +55,7 @@ export const Carousel = styled.li`
     width: 100%;
     height: 400px;
     background-color: #082759;
-    border: 1.4px solid #ffffff2b;
+    border: 1.4px solid ${colors.light_weak_border};
     padding: 1rem;
     position: relative;
     border-bottom-left-radius: .5rem;
@@ -148,7 +149,7 @@ export const Carousel = styled.li`
         height: 12px;
         border-radius: 50%;
         cursor: pointer;
-        border: 1px solid #ffffff22;
+        border: 1px solid ${colors.light_weak_border};
         transition: .2s;
       }
     }

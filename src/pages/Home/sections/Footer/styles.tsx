@@ -11,7 +11,7 @@ export const Footer = styled.footer`
   justify-content: center;
   padding: 40px 2rem;
   background-color: ${sectionBackgroundColors.footer};
-  border-top: 1.5px solid #ffffff16;
+  border-top: 1.4px solid #ffffff1c;
   .content{
     width: ${sizings.content};
     justify-content: center;
@@ -69,12 +69,12 @@ export const Footer = styled.footer`
         }
         li{
           flex: none;
-          background-color: #181f50;
+          background-color: #181d49;
           width: 120px;
           height: 90%;
           
           border-radius: .3rem;
-          border: 1.5px solid #ffffff75;
+          border: 1.5px solid #ffffff42;
           transition: .2s ease;
           opacity: .6;
           @media (max-width: 900px) {
@@ -93,7 +93,7 @@ export const Footer = styled.footer`
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: #fff;
+            color: ${colors.light};
             gap: .7rem;
             padding: 1.5rem 0;
             i{

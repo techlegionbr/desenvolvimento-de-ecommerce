@@ -1,8 +1,8 @@
 import * as S from "./styles"
 
 
-import imageFaq from "../../../../assets/images/faq/confident-call-center-operator-talking-with-client.jpg"
-import Accordions from "./components/Accorions"
+import imageFaq from "../../../../assets/images/top-view-multiedhnic-team-working-computers_19_11zon.webp"
+import Accordions from "./components/Accordions"
 
 
 
@@ -20,7 +20,7 @@ const Faq = () => {
             accordions={[
               {
                 question: "Quais são os benefícios de contratar um serviço de desenvolvimento de ecommerce?",
-                response: "Ao contratar um serviço de desenvolvimento de e-commerce, você pode se beneficiar de profissionais especializados que têm experiência em projetar e construir lojas online eficientes e atraentes. Isso pode economizar tempo e esforço, garantindo que sua loja seja configurada corretamente desde o início. Além disso, um bom serviço de desenvolvimento de e-commerce pode fornecer recursos personalizados, integrações com sistemas de pagamento, gerenciamento de estoque e suporte técnico contínuo."
+                response: "Ao contratar um serviço de desenvolvimento de e-commerce, você pode se beneficiar de profissionais especializados que têm experiência em projetar e construir lojas online eficientes e atraentes. Isso pode economizar tempo e esforço, garantindo que sua loja seja configurada corretamente desde o início. Além disso, um bom serviço de desenvolvimento de e-commerce."
               },
               {
                 question: "Quanto tempo leva para desenvolver um ecommerce?",
