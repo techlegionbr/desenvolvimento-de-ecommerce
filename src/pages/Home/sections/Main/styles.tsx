@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { colors, fonts, sizings } from "../../../../styles/vars";
+import backgroundImage from "../../../../assets/images/mão-robo-primary.webp"
 
 export const Main = styled.div`
   display: flex;
@@ -7,10 +8,13 @@ export const Main = styled.div`
   justify-content: center;
   width: 100%;
   padding: 200px 2rem;
+  background-image: url(${backgroundImage});
+  background-size: cover;
+  background-position: center;
 
   @media (max-width: 1300px) { min-height: 100vh; }
 
-  background: ${colors.primary};
+  background-color: ${colors.primary};
   .content{
     width: ${sizings.content};
     display: flex;
@@ -108,9 +112,8 @@ export const Main = styled.div`
         border-radius: .3rem;
         text-transform: uppercase;
         cursor: pointer;
-
         transition: .2s;
-        opacity: .8;
+        opacity: .9;
         &:hover{
           opacity: 1;
         }

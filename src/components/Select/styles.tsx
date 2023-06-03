@@ -28,15 +28,15 @@ export const Select = styled.div<PropsSelect>`
   input{
     border: 1.4px solid ${({ show }) => JSON.parse(show) ? "#ffffffd5" : "#ffffff1d"};;
     width: 100%;
-    color: ${colors.light};
     font-size: 1rem;
     padding: .8rem 1rem;
     border-radius: .3rem;
-    color: ${({ active }) => JSON.parse(active) ? "#fff" : "#ffffff9e"};
+    color: ${({ active }) => JSON.parse(active) ? "#fff" : "#ffffffbd"};
     cursor: pointer;
 
 
-    background-color: #73c2ff4a;
+    background-color: #53a9ea49;
+          backdrop-filter: blur(7px);
     z-index: 4;
   }
   .options{

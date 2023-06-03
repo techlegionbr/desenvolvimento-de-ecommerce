@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   body{
     background-color: ${colors.primary};
     color: ${colors.light};
-    font-family: ${fonts.Montserrat};
+    font-family: ${fonts.Poppins};
   }
 
   a{

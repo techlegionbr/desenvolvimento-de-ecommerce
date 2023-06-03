@@ -13,12 +13,13 @@ width: 100%;
           padding: .8rem 1rem;
           border-radius: .3rem;
 
-          background-color: #73c2ff4a;
+          background-color: #53a9ea49;
+          backdrop-filter: blur(7px);
 
           outline: none;
           transition: .2s;
           &::placeholder{
-            color: #ffffff9e;
+            color: #ffffffbd;
           }
           &:focus{
             border: 1.4px solid #ffffffd5;
