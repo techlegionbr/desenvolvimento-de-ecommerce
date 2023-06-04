@@ -40,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 2.1rem;
     font-size: 1.9rem;
     @media (max-width: 580px) {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       line-height: 1.7rem;
     }
   }

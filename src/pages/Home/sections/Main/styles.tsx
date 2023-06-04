@@ -7,7 +7,7 @@ export const Main = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 200px 2rem;
+  padding: 150px 2rem;
   background-image: url(${backgroundImage});
   background-size: cover;
   background-position: center;
@@ -114,6 +114,9 @@ export const Main = styled.div`
         cursor: pointer;
         transition: .2s;
         opacity: .9;
+        @media (max-width: 400px) {
+          font-size: .8rem;
+        }
         &:hover{
           opacity: 1;
         }

@@ -1,18 +1,12 @@
 
 import * as S from "./styles"
-import imageLion from "../../../../assets/images/lion_blue.png"
+import imageLion from "../../../../assets/images/Logo_Tech_Legion_H_02_Blue.png"
 
 const Header = () => {
   return (
     <S.Header>
       <div className="content">
-        <div className="logo">
-          <img src={imageLion} width={38} />
-          <div className="title">
-            <h1>Tech <span>Legion</span></h1>
-            <p>Uma Legião ao seu lado</p>
-          </div>
-        </div>
+        <img className="logo" src={imageLion} width={170} />
         <a href="#faq-section" id="button-info">
           <i className='bx bxs-info-circle'></i>
         </a>

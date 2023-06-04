@@ -24,28 +24,6 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .logo{
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      .title{
-        line-height: 1.3rem;
-        h1{
-          text-transform: uppercase;
-          font-size: 1.5rem;
-          font-weight: 100;
-          span{
-            font-weight: bold;
-            color: ${colors.third}
-          }
-        }
-        p{
-          text-transform: uppercase;
-          font-size: .76rem;
-          color: #b1e1fcb9;
-        }
-      }
-    }
     #button-info{
       all: unset;
       font-size: 1.3rem;

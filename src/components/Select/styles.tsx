@@ -33,11 +33,12 @@ export const Select = styled.div<PropsSelect>`
     border-radius: .3rem;
     color: ${({ active }) => JSON.parse(active) ? "#fff" : "#ffffffbd"};
     cursor: pointer;
-
-
     background-color: #53a9ea49;
-          backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
     z-index: 4;
+    @media (max-width: 400px) {
+      font-size: .9rem;
+    }
   }
   .options{
     top: calc(100% + .4rem);

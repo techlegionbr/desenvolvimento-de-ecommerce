@@ -18,6 +18,9 @@ width: 100%;
 
           outline: none;
           transition: .2s;
+          @media (max-width: 400px) {
+            font-size: .9rem;
+          }
           &::placeholder{
             color: #ffffffbd;
           }
