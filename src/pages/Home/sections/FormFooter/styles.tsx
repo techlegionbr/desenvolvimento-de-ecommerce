@@ -100,6 +100,9 @@ export const FormFooter = styled.div`
           opacity: .7;
           cursor: pointer;
           transition: .2s;
+          @media (max-width: 400px) {
+            font-size: .8rem;
+          }
           &:hover{
             opacity: 1;
           }

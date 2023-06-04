@@ -55,6 +55,12 @@ const Carousel = ({ items }: PropsCarousel) => {
 
   return (
     <S.Carousel>
+      {
+
+      }
+      {
+
+      }
       <button className="button-controller button-controller-left" onClick={() => handleClickButtonScroller("left")}><i className='bx bx-chevron-left'></i></button>
       <button className="button-controller button-controller-right" onClick={() => handleClickButtonScroller("right")}><i className='bx bx-chevron-right'></i></button>
       <ul className="carousel-list" ref={carouselRef}>

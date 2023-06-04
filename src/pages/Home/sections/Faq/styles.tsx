@@ -13,7 +13,6 @@ export const Faq = styled.div`
   padding: ${sizings.padding_section};
   background: ${sectionBackgroundColors.faq};
   border-top: 1.4px solid #ffffff1c;
-  @media (max-width: 1300px) { min-height: 100vh; }
   .content{
     width: ${sizings.content};
     .faq-container{

@@ -7,14 +7,13 @@ export const Main = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 150px 2rem;
+  padding: 150px 1rem;
   background-image: url(${backgroundImage});
   background-size: cover;
   background-position: center;
+  background-color: ${colors.primary};
 
   @media (max-width: 1300px) { min-height: 100vh; }
-
-  background-color: ${colors.primary};
   .content{
     width: ${sizings.content};
     display: flex;

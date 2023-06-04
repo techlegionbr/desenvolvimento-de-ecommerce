@@ -25,6 +25,7 @@ export const Carousel = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin-top: ${sizings.spacing_top_title_section};
   @media (max-width: 470px) {
     margin-top: 2rem;

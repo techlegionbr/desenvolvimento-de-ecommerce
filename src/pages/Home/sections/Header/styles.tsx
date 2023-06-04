@@ -17,7 +17,7 @@ export const Header = styled.header`
   top: 0;
   left: 0;
   z-index: 99;
-  padding: 2rem;
+  padding: 2rem 1rem;
   border-bottom: 1.6px solid #ffffff15;
   .content{
     width: ${sizings.content};

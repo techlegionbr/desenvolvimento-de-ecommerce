@@ -9,7 +9,7 @@ export const Footer = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 2rem;
+  padding: 40px 1rem;
   background-color: ${sectionBackgroundColors.footer};
   border-top: 1.4px solid #ffffff1c;
   .content{
