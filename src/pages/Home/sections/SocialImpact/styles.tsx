@@ -1,11 +1,10 @@
 import { styled } from "styled-components";
-import { sectionBackgroundColors } from "../../vars";
 import { colors, sizings } from "../../../../styles/vars";
 
 
 
 export const SocialImpact = styled.div`
-  background-color: ${sectionBackgroundColors.socialInpact};
+  background-color: ${colors.primary};
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -81,7 +80,7 @@ export const SocialImpact = styled.div`
         @media (max-width: 1000px) {
           width: 100%;
           height: 60%;
-          padding: 2rem 2rem;
+          padding: 2rem 1rem;
         }
         .title-description{
           display: inline-flex;

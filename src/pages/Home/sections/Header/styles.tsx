@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import { colors, sizings } from "../../../../styles/vars";
-import { sectionBackgroundColors } from "../../vars";
 
 export const Header = styled.header`
   display: flex;
@@ -10,7 +9,7 @@ export const Header = styled.header`
   width: 100%;
   height: 80px;
 
-  background: ${sectionBackgroundColors.header};
+  background: ${colors.primary};
   backdrop-filter: blur(5px);
 
   position: fixed;

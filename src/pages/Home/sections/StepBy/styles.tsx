@@ -1,11 +1,10 @@
 import { styled } from "styled-components";
 import { colors, sizings } from "../../../../styles/vars";
-import { sectionBackgroundColors } from "../../vars";
 
 
 
 export const StepBy = styled.div`
-  background-color: ${sectionBackgroundColors.stepBy};
+  background-color: ${colors.primary_weak};
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -47,37 +46,30 @@ export const Carousel = styled.div`
     transition: .2s;
     opacity: .7;
     z-index: 3;
+    top: 0;
+      bottom: 0;
+      margin: auto;
     &:hover{
       opacity: 1;
     }
-    @media (min-width: 470px) {
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
     @media (max-width: 470px) {
-      bottom: -4rem;
+      width: 30px;
+      height: 30px;
+      font-size: 1.4rem;
     }
+   
 
   }
   .button-controller-left{
     left: -.2rem;
-    @media (max-width: 470px) {
-      left: calc(50% - 3rem);;
-    }
   }
   .button-controller-right{
     right: -.2rem;
-    @media (max-width: 470px) {
-      right: calc(50% - 3rem);
-    }
   }
   .carousel-list{
       width: calc((270px * 3) + 2rem);
       height: 270px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
       overflow: hidden;
       scroll-behavior: smooth;
       gap: 1rem;

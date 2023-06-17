@@ -14,7 +14,7 @@ const Benefits = () => {
     <S.Benefits>
       <div className="content">
         <div className="title-section">
-          <h1>Descubra um <span>mundo de possibilidades</span> com nosso serviço de desenvolvimento de e-commerce</h1>
+          <h1>Descubra um <span>mundo de possibilidades</span> com nosso serviço de desenvolvimento de ecommerce</h1>
           <p>Repleto de recursos e <strong>funcionalidades exclusivas</strong> que irão <strong>impulsionar o sucesso do seu <br /> negócio online</strong>.</p>
         </div>
         <ul className="card-list">
@@ -22,7 +22,7 @@ const Benefits = () => {
             icon={<i className='bx bxs-devices'></i>}
             image={imgDesignResponsivo}
             title={<h4>Design <span>atraente<br /> e responsivo</span></h4>}
-            description="O serviço de desenvolvimento de e-commerce deve oferecer design moderno, limpo e responsivo, adaptável a smartphones, tablets e computadores. Garanta experiência de compra agradável e consistente em todos os dispositivos."
+            description="O serviço de desenvolvimento de ecommerce deve oferecer design moderno, limpo e responsivo, adaptável a smartphones, tablets e computadores. Garanta experiência de compra agradável e consistente em todos os dispositivos."
             redirect="/"
           />
           <Card

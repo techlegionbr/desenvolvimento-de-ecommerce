@@ -15,8 +15,16 @@ type PropsCarousel = {
   }
 }
 
+interface IBlockButtons {
+  left: boolean,
+  right: boolean
+}
+
 const Carousel = ({ items, label }: PropsCarousel) => {
   const [current, setCurrent] = useState(0)
+  const [blockButtons, setBlockButtons] = useState<IBlockButtons>({
+    left: false, right: false
+  })
 
   const carouselRef = useRef<HTMLUListElement | null>(null)
 
@@ -29,22 +37,32 @@ const Carousel = ({ items, label }: PropsCarousel) => {
     setCurrent(position)
   }, [current])
 
-  const handleClickController = useCallback((direction: "left" | "right") => {
-    const carouselCurrent = carouselRef.current
-    if (!carouselCurrent) return
+  const handleClickController = (direction: "left" | "right") => {
+    const { current: carouselElement } = carouselRef;
+    if (!carouselElement) return;
+    const offsetWidth = carouselElement.offsetWidth;
+    const { left: leftBlock, right: rightBlock } = blockButtons;
 
-    const { offsetWidth } = carouselCurrent
+    const setBlockButtonsState = (left: boolean, right: boolean): void => {
+      setBlockButtons(prevBlock => ({
+        ...prevBlock,
+        left,
+        right
+      }));
+    };
 
-    if (direction === "left") {
-      carouselCurrent.scrollLeft -= offsetWidth
+    if (direction === "left" && !leftBlock) {
+      carouselElement.scrollLeft -= offsetWidth;
       setCurrent(prevCurrent => prevCurrent !== 0 ? prevCurrent - 1 : prevCurrent)
-    }
-    if (direction === "right") {
-      carouselCurrent.scrollLeft += offsetWidth
+      setBlockButtonsState(true, false);
+      setTimeout(() => { setBlockButtonsState(false, false); }, 1000);
+    } else if (direction === "right" && !rightBlock) {
+      carouselElement.scrollLeft += offsetWidth;
       setCurrent(prevCurrent => prevCurrent !== items.length - 1 ? prevCurrent + 1 : prevCurrent)
+      setBlockButtonsState(false, true);
+      setTimeout(() => { setBlockButtonsState(false, false); }, 1000);
     }
-  }, [items])
-
+  }
   return (
     <S.Carousel>
       <div className="title-card">

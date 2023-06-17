@@ -1,10 +1,9 @@
 import { styled } from "styled-components";
-import { sectionBackgroundColors } from "../../vars";
 import { colors, sizings } from "../../../../styles/vars";
 
 
 export const Techologies = styled.div`
-  background-color: ${sectionBackgroundColors.techologies};
+  background-color: ${colors.primary};
   width: 100%;
   display: flex;
   align-items: flex-start;

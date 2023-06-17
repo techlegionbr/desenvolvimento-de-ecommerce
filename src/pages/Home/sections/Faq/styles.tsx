@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import { colors, sizings } from "../../../../styles/vars";
-import { sectionBackgroundColors } from "../../vars";
 
 
 
@@ -11,7 +10,7 @@ export const Faq = styled.div`
   align-items: center;
   justify-content: center;
   padding: ${sizings.padding_section};
-  background: ${sectionBackgroundColors.faq};
+  background: ${colors.primary_weak};
   border-top: 1.4px solid #ffffff1c;
   .content{
     width: ${sizings.content};
@@ -62,7 +61,7 @@ export const Accordions = styled.ul`
 `
 
 type PropsAccordion = {
-  show: string
+  show: "true" | "false"
 }
 
 export const Accordion = styled.li<PropsAccordion>`
@@ -82,17 +81,18 @@ export const Accordion = styled.li<PropsAccordion>`
   }
   .question{
     width: 100%;
-    min-height: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
     position: relative;
     padding: 0 2.4rem;
-    opacity: ${({ show }) => JSON.parse(show) ? "1" : ".6"};
+    opacity: ${({ show }) => show === "true" ? "1" : ".6"};
     transition: .2s;
     @media (max-width: 500px) {
       padding: 0 1.7rem;
+      height: 50px;
     }
     .arrow-button{
       all: unset;
@@ -132,22 +132,21 @@ export const Accordion = styled.li<PropsAccordion>`
     }
   }
   .response{
-    height: ${({ show }) => JSON.parse(show) ? "220px" : "0px"};
+    height: ${({ show }) => show === "true" ? "220px" : "0px"};
     transition: .2s;
     overflow: hidden;
     padding: 0 2.4rem;
     @media (max-width: 1000px) {
-      height: ${({ show }) => JSON.parse(show) ? "150px" : "0px"};
+      height: ${({ show }) => show === "true" ? "150px" : "0px"};
     }
     @media (max-width: 870px) {
-      height: ${({ show }) => JSON.parse(show) ? "220px" : "0px"};
+      height: ${({ show }) => show === "true" ? "220px" : "0px"};
     }
     @media (max-width: 660px) {
-      height: ${({ show }) => JSON.parse(show) ? "280px" : "0px"};
+      height: ${({ show }) => show === "true" ? "240px" : "0px"};
     }
     @media (max-width: 500px) {
       padding: 0 1.7rem;
-      height: ${({ show }) => JSON.parse(show) ? "280px" : "0px"};
     }
     p{
       padding-top: 1rem;

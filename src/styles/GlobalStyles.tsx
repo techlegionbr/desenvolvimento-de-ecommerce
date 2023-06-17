@@ -30,10 +30,10 @@ const GlobalStyles = createGlobalStyle`
 
   p{
     font-size: 1.1rem;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
     @media (max-width: 580px) {
       font-size: .9rem;
-      line-height: 1rem;
+      line-height: 1.3rem;
     }
   }
   h1{

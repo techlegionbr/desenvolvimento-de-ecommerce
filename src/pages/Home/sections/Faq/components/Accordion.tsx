@@ -13,7 +13,7 @@ const Accordion = ({ question, response, number }: PropsAccordion) => {
   const show = accordions[number.toString()]
 
   return (
-    <S.Accordion onClick={() => onClickAccordion(number, show)} show={JSON.stringify(show)}>
+    <S.Accordion onClick={() => onClickAccordion(number, show)} show={show ? "true" : "false"}>
 
       <div className="question">
         <span className="number-question">{number}.</span>

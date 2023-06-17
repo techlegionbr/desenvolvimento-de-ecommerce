@@ -12,7 +12,7 @@ const Faq = () => {
     <S.Faq id="faq-section">
       <div className="content">
         <div className="title-section">
-          <h1> Perguntas Frequentes sobre <br /><span>Desenvolvimento de E-commerce</span></h1>
+          <h1> Perguntas Frequentes sobre <br /><span>Desenvolvimento de Ecommerce</span></h1>
           <p>Respostas para as suas <strong>dúvidas mais comuns</strong> antes de contratar nossos serviços</p>
         </div>
         <div className="faq-container">

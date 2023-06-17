@@ -1,11 +1,11 @@
 import { styled } from "styled-components";
-import { sectionBackgroundColors } from "../../vars";
+
 import { colors, sizings } from "../../../../styles/vars";
 
 
 
 export const Benefits = styled.div`
-  background-color: ${sectionBackgroundColors.benefits};
+  background-color: ${colors.primary_weak};
   width: 100%;
   display: flex;
   align-items: flex-start;

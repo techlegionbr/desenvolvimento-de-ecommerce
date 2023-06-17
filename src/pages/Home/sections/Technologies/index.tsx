@@ -6,8 +6,8 @@ const Technologies = () => {
     <S.Techologies>
       <div className="content">
         <div className="title-section">
-          <h1>Ferramentas incríveis para criar um <br /> <span>e-commerce único</span></h1>
-          <p>No desenvolvimento do nosso <strong>serviço de e-commerce</strong>, utilizamos uma variedade de <strong>tecnologias modernas</strong> para garantir uma experiência de compra segura, rápida e intuitiva.</p>
+          <h1>Ferramentas incríveis para criar um <br /> <span>ecommerce único</span></h1>
+          <p>No desenvolvimento do nosso <strong>serviço de ecommerce</strong>, utilizamos uma variedade de <strong>tecnologias modernas</strong> para garantir uma experiência de compra segura, rápida e intuitiva.</p>
         </div>
         <ul className="carousel-list">
           <Carousel

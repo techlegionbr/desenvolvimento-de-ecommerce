@@ -6,8 +6,8 @@ const StepBy = () => {
     <S.StepBy>
       <div className="content">
         <div className="title-section">
-          <h1>Etapas para <br /><span>desenvolver seu E-commerce</span></h1>
-          <p>Todo o processo pensado no melhor resultado do seu e-commerce</p>
+          <h1>Etapas para <br /><span>desenvolver seu Ecommerce</span></h1>
+          <p>Todo o processo pensado no melhor resultado do seu ecommerce</p>
         </div>
         <Carousel items={[
           {

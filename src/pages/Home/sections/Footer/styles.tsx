@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import { colors, sizings } from "../../../../styles/vars";
-import { sectionBackgroundColors } from "../../vars";
 
 
 
@@ -10,7 +9,7 @@ export const Footer = styled.footer`
   align-items: center;
   justify-content: center;
   padding: 40px 1rem;
-  background-color: ${sectionBackgroundColors.footer};
+  background-color: ${colors.primary_weak};
   border-top: 1.4px solid #ffffff1c;
   .content{
     width: ${sizings.content};
@@ -54,6 +53,7 @@ export const Footer = styled.footer`
         text-transform: uppercase;
         color: ${colors.third};
         font-weight: 100;
+        line-height: .9rem;
       }
       ul{
         margin-top: .6rem;
